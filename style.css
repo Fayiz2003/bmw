@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
+}
+nav {
+  margin: 0;
+  padding: 0;
+}
+.np {
+  cursor: pointer;
+}
+.navbar-brand img {
+  max-height: 50px;
+}
+video {
+  max-width: 100%;
+  height: auto;
+}
+.welcome{
+    transition:transform 2s;
+    &:hover{
+        transition:transform 2s;
+        transform: rotate(360deg);
+    }
+}
+#list{
+  color:rgb(187,187,187);
+}
+#sidediv{
+  position: absolute;
+  top: 40%;
+  left:5%;
+  height: 70px;
+  width: 100px;
+  background-color: transparent;
+  transition: 2s;
+  border-radius: 20px;
+
+  &:hover{
+    height: 220px;
+    transition:  2s;
+    background-color: azure;
+  }
+}
+@media screen and (max-width : 600px){
+  #sidediv{
+    display: none;
+  }
+}
